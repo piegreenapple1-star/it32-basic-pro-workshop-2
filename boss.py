@@ -1,0 +1,11 @@
+quantity = int(input("จำนวนปืนที่รับมาขาย : "))
+cost_price = int(input("ต้นทุนของปืนที่รับมา : "))
+self_price = int(input("ราคาที่นำไปขาย : "))
+team_members = int(input("จำนวนลูกน้องที่ทำงาน : "))
+profit = int((quantity*self_price)-(quantity*cost_price))
+
+print("ต้นทุนทั้งหมด", quantity*cost_price, "บาท")
+print("รายรับทั้งหมด", quantity*self_price, "บาท")
+print("กำไรสุทธิ", profit, "บาท")
+print("เงินให้บอส", (profit*20)/100, "บาท")
+print("เงินให้ลูกน้องแต่ละคน",((profit*80)/100)/team_members, "บาท")
